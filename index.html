@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Límite del Corazón - Demian Cabrera</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            /* Usando tu imagen de fondo exacta */
+            background: url('blanco y morado.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #1a1a1a;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.7); /* Fondo sutil para que resalte el logo */
+        }
+
+        .logo-img {
+            height: 120px; 
+            object-fit: contain;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+            gap: 40px;
+        }
+
+        .portada-container img {
+            width: 100%;
+            max-width: 380px;
+            border-radius: 10px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+        }
+
+        .info-box {
+            flex: 1;
+            min-width: 300px;
+            background: rgba(255, 255, 255, 0.85); /* Efecto cristal */
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(5px);
+        }
+
+        h1 { font-size: 2.8rem; color: #4b0082; margin-bottom: 10px; }
+        .autor { font-size: 1.4rem; color: #555; margin-bottom: 20px; }
+        
+        .precio {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #27ae60;
+            margin: 20px 0;
+        }
+
+        .btn-comprar {
+            background: #6a1b9a; /* Color morado del logo de Plumas */
+            color: white;
+            padding: 18px 45px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            display: inline-block;
+            transition: 0.3s;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 15px rgba(106, 27, 154, 0.3);
+        }
+
+        .btn-comprar:hover {
+            background: #4a148c;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(106, 27, 154, 0.5);
+        }
+
+        footer {
+            padding: 30px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #444;
+            background: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Logo Plumas" class="logo-img">
+    </header>
+
+    <div class="main-content">
+        <div class="portada-container">
+            <img src="portada.png" alt="Portada El Límite del Corazón">
+        </div>
+
+        <div class="info-box">
+            <h1>El Límite del Corazón</h1>
+            <p class="autor">Escrito por <b>Demian Cabrera</b></p>
+            <p>Sumérgete en esta apasionante historia digital.</p>
+            <p class="precio">$2.99 USD</p>
+            
+            <a href="https://demiancab.gumroad.com/l/yyvfgw" class="btn-comprar">COMPRAR AHORA</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Plumas oficial. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
